@@ -160,6 +160,7 @@ Após seguir os passos acima, sua aplicação estará funcionando!
 Qualquer dúvida ou necessidade de suporte, sinta-se à vontade para entrar em contato:
 
 * **Seu Nome:** Vitor Moura
-* **Seu Email:** viictormoura1998@gmail.com
+* **Discord:** xviictorx
+* **Link da comunidade no Discord:** [FULL STACK HUB](https://discord.gg/FvwXhJzDn2)
 
 ---
