@@ -36,7 +36,7 @@ A solução é dividida em duas aplicações independentes e desacopladas:
     * **Endereços:** Listar, Cadastrar, Editar, Excluir.
 * **Tela de Pesquisa de Usuários:** Filtros por Nome, CPF e Período de cadastro.
 * **Relações de Entidades:**
-    * **Usuário 1:1 Perfil:** Um usuário está vinculado a um único perfil (e um perfil pode ter vários usuários).
+    * **Usuário N:1 Perfil:** Um usuário está vinculado a um único perfil (e um perfil pode ter vários usuários).
     * **Usuário N:M Endereço:** Um usuário pode ter múltiplos endereços, e um mesmo endereço pode ser vinculado a vários usuários (relação muitos-para-muitos via tabela pivô `address_user`).
 * **Validações Robustas:**
     * **Backend:** Validações para campos obrigatórios, formato de e-mail, e unicidade para **Nome**, **Email** e **CPF** de usuários, além de unicidade para o **Nome** do perfil.
