@@ -1,0 +1,23 @@
+# Ignorar as pastas padrão do XAMPP e outros arquivos que não são do projeto
+applications.html
+bitnami.css
+dashboard/
+favicon.ico
+img/
+index.php
+webalizer/
+xampp/
+arenahosting/
+# Adicione aqui outros arquivos/pastas do XAMPP que aparecem no 'git status' e você não quer no repo
+
+# Ignorar arquivos sensíveis do Laravel (já nos .gitignore do Laravel e Vue, mas bom ter certeza)
+crud-vue-laravel-backend/.env
+crud-vue-laravel-backend/vendor/
+crud-vue-laravel-backend/node_modules/
+crud-vue-laravel-backend/public/build/ # Se o Laravel usa Vite para assets, ignorar a build final
+crud-vue-laravel-backend/.phpunit.result.cache
+
+# Ignorar arquivos sensíveis do Vue.js
+crud-vue-laravel-frontend/node_modules/
+crud-vue-laravel-frontend/dist/ # Pasta de build de produção do Vue/Vite
+crud-vue-laravel-frontend/.env

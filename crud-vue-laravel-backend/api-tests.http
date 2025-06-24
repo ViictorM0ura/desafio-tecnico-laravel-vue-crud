@@ -1,0 +1,66 @@
+### GET todos os perfis
+GET http://localhost/crud-vue-laravel-backend/public/api/profiles
+Accept: application/json
+
+### POST um novo perfil
+POST http://localhost/crud-vue-laravel-backend/public/api/profiles
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Administrador"
+}
+
+### GET um perfil específico (Altere o ID se necessário, após criar um)
+GET http://localhost/crud-vue-laravel-backend/public/api/profiles/1
+Accept: application/json
+
+### PUT/PATCH para atualizar um perfil (Altere o ID e o nome se necessário)
+PUT http://localhost/crud-vue-laravel-backend/public/api/profiles/1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Administrador Mestre"
+}
+
+### DELETE um perfil (CUIDADO! Altere o ID se necessário)
+DELETE http://localhost/crud-vue-laravel-backend/public/api/profiles/1
+Accept: application/json
+
+### GET todos os usuários (inicialmente vazio)
+GET http://localhost/crud-vue-laravel-backend/public/api/users
+Accept: application/json
+
+### POST um novo usuário (Requer um profile_id existente)
+POST http://localhost/crud-vue-laravel-backend/public/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "João da Silva",
+    "email": "joao@example.com",
+    "password": "password123",
+    "cpf": "111.222.333-44",
+    "profile_id": 1,
+    "addresses": []
+}
+
+### GET todos os endereços (inicialmente vazio)
+GET http://localhost/crud-vue-laravel-backend/public/api/addresses
+Accept: application/json
+
+### POST um novo endereço
+POST http://localhost/crud-vue-laravel-backend/public/api/addresses
+Content-Type: application/json
+Accept: application/json
+
+{
+    "street": "Rua das Flores",
+    "number": "123",
+    "complement": "Apto 101",
+    "neighborhood": "Centro",
+    "city": "São Paulo",
+    "state": "SP",
+    "zip_code": "01000-000"
+}
